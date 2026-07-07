@@ -41,6 +41,27 @@ This repository contains Playwright end-to-end test automation for both the Auto
   npx playwright show-report
   ```
 
+## Skills
+
+This project includes two reusable automation skills:
+
+- `.claude/skills/automated-tests` for generating and maintaining Playwright tests from the scenario documents.
+- `.claude/skills/test-coverage` for reviewing and expanding test coverage based on the markdown definitions in `docs/`.
+
+Use these skills to guide new test implementation, keep scenarios aligned with the docs, and verify the behavior by running the relevant Playwright spec.
+
+## Run skills with prompts
+
+You can trigger the available skills from the prompt command by naming the skill and passing arguments when needed.
+
+Example:
+```text
+/automated-tests "login UI"
+/test-coverage "product page"
+```
+
+Arguments are passed as free-form text after the skill name, so you can provide scenario names, page names, or other context to guide the automation.
+
 ## Notes
 
 - The project is configured with a default base URL for AutomationExercise, while the SauceDemo login tests navigate directly to `https://www.saucedemo.com/`
