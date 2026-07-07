@@ -1,0 +1,14 @@
+{
+  "name": "taller-project-playwright-tests",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "install:browsers": "npx playwright install --with-deps"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
